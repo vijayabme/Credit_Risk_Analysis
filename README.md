@@ -38,4 +38,6 @@ Build and evaluate several machine learning models to predict credit risk.
 ![image](https://github.com/vijayabme/Credit_Risk_Analysis/blob/main/Resources/EasyEnsemble_ADABoost.png)
 ## Summary
  - Of all the machine learning models the ADA boost had the highest accuracy and had a higher recall and precision for the high risk loans
- - The precision is still low at 0.09 which is not enough to predict the high risk loans correctly.
+ - The precision is still low at 0.09 which is not enough to predict the high credit risk accurately.
+ - So none of these machine learning algorithms are giving good results.
+ - We would have to look at the feature importance and remove some of the less important features and try again to get a better precision and accuracy.
