@@ -16,18 +16,26 @@ Build and evaluate several machine learning models to predict credit risk.
 ![image](https://github.com/vijayabme/Credit_Risk_Analysis/blob/main/Resources/SMOTE_oversampling.png)
 ##### Cluster Centroids
 - Under sampling is reducing the accuracy compared to over sampling. The accuracy dropped to 0.54
-- The precision didnt change from oversampling.
+- The precision is still very low for the high risk category.
 - The recall dropped quite a bit with high risk at 0.69 and low risk at 0.40.
-https://github.com/vijayabme/Credit_Risk_Analysis/blob/main/Resources/Cluster_centroids_undersampling.png
+![image](https://github.com/vijayabme/Credit_Risk_Analysis/blob/main/Resources/Cluster_centroids_undersampling.png)
 ##### SMOTEENN
 - With SMOTEENN the accuracy dropped compared to SMOTE and random over sampler.
 - The precision is similar to the other oversampling methods at 0.01 and 1.00.
+- The recall is low for low-risk at 0.57
 ![image](https://github.com/vijayabme/Credit_Risk_Analysis/blob/main/Resources/Combination_Sampling.png)
 #### Ensemble Classifiers to predict credit risk
 ##### BalancedRandomForestClassifier 
-
+- The accuracy is 0.78 which is an improvement from all the oversampling and undersampling techniques used above.
+- The precision for high risk is still low at 0.03
+- The recall for the high-risk is 0.70 and low-risk is 0.86 which are slightly better
 ![image](https://github.com/vijayabme/Credit_Risk_Analysis/blob/main/Resources/Balanced_RFC.png)
 ##### EasyEnsembleClassifier
-
+- The Easy ensemble ADA boost has the best accuracy so far at 0.93
+- The precision for high-risk is also the highest compared to other techniques at 0.09
+- The recall is high for both high categories.
+- The f1 score is also higher compared to other techniques above at 0.16
 ![image](https://github.com/vijayabme/Credit_Risk_Analysis/blob/main/Resources/EasyEnsemble_ADABoost.png)
 ## Summary
+ - Of all the machine learning models the ADA boost had the highest accuracy and had a higher recall and precision for the high risk loans
+ - The precision is still low at 0.09 which is not enough to predict the high risk loans correctly.
